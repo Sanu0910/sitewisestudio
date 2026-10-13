@@ -8,7 +8,7 @@ Plain HTML + CSS + a little vanilla JS. No frameworks, no build step. Hosted fre
 
 | Path | What it is |
 |---|---|
-| `index.html` | Main landing page (hero, services, ownership, work, process, packages, FAQ, contact) |
+| `index.html` | Main landing page (hero, services, plan comparison, work, process, plans, FAQ, contact) |
 | `thank-you.html` | Page shown after the contact form is sent |
 | `404.html` | "Page not found" page (GitHub Pages uses it automatically) |
 | `privacy.html`, `terms.html`, `refund.html`, `delivery.html` | Policy pages (needed for Razorpay website verification) |
@@ -84,7 +84,11 @@ Never put Razorpay secret keys in this repo. The Payment Button embed code is sa
 ## Editing tips
 
 - **Colours**: change the variables at the top of `css/style.css`. Keep navy text on coral buttons (white on coral fails contrast) and use `#C9441C` for small coral text on light backgrounds.
-- **Packages**: the "Ask for price" buttons use `data-package="Starter"` (etc.) to pre-select the package in the form. The service cards use `data-need="..."`. The values must exactly match an `<option value>` in the form.
-- **Links from other pages** can pre-select too: `index.html?package=Premium#contact`.
+- **Plans** (how the studio works):
+  - **Student**: one-time payment + full source code handover, special discount with a valid college ID.
+  - **Personal & Professional**: two options. *One-time* (source code handed over, client manages it) or *Managed* (we host and maintain it, 2 update rounds a year).
+  - **Business** (homestays, hotels, shops, commercial, e-commerce): build fee + care plan, maintenance included as standard.
+- **Plan buttons**: the "Ask for price" buttons use `data-package="..."` to pre-select the plan in the form, and the service cards use `data-need="..."`. The values must exactly match an `<option value>` in the form.
+- **Links from other pages** can pre-select too, e.g. `index.html?need=E-commerce#contact`.
 - **Sitemap**: if you add a page, add it to `sitemap.xml`.
 - **Share preview image**: `assets/og-image.png`. Edit `assets/og-image.svg` and export it at 1200x630 if you change it.
