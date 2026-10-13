@@ -1,0 +1,5 @@
+# GitHub Pages: don't publish these repo files on the live website
+exclude:
+  - README.md
+  - LICENSE
+  - _private
