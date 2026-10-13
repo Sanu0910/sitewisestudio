@@ -237,10 +237,43 @@
       <div class="container">
         <div class="section-head reveal">
           <p class="eyebrow">Work</p>
-          <h2 id="work-title">A taste of what we can build</h2>
-          <p>Hover or tap a preview to scroll through the page.</p>
-          <p class="work-note"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3a9 9 0 1 0 0 18c1.5 0 2-1 2-2s-1-1.5-1-2.5 1-1.5 2-1.5h2a4 4 0 0 0 4-4c0-4.4-4-8-9-8z"/><circle cx="7.5" cy="11" r="1.2"/><circle cx="10" cy="7" r="1.2"/><circle cx="15" cy="7.5" r="1.2"/></svg>Sample concepts: designed to show our style, not client projects.</p>
+          <h2 id="work-title">Recent work</h2>
+          <p>Websites we&rsquo;ve recently designed and launched, plus a few concepts that show our range.</p>
         </div>
+
+        <h3 class="work-sub reveal">Recent projects</h3>
+        <!-- To show a screenshot: save it as assets/work/<name>.webp (1280x800) and replace the
+             <div class="project__art ..."> block with
+             <img src="assets/work/<name>.webp" alt="Homepage of ..." width="1280" height="800" loading="lazy"> -->
+        <div class="projects">
+          <article class="card project reveal" style="--d:0.00s">
+            <div class="card__bar concept__bar"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="concept__url">electronics101.online</span></div>
+            <div class="project__art project__art--elec" aria-hidden="true"><span class="project__mono">E101</span><span class="project__name">Electronics 101</span></div>
+            <div class="concept__meta project__meta">
+              <div>
+                <span class="tag tag--live">Live client project</span>
+                <h4>Electronics 101</h4>
+                <p>Designed &amp; built by Sitewise Studio.</p>
+              </div>
+              <a class="btn btn--outline btn--sm" href="https://electronics101.online/" target="_blank" rel="noopener">Visit live site<span class="visually-hidden">: Electronics 101 (opens in a new tab)</span><svg class="icon icon--arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </article>
+          <article class="card project reveal" style="--d:0.08s">
+            <div class="card__bar concept__bar"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="concept__url">mayurisyarntales.online</span></div>
+            <div class="project__art project__art--yarn" aria-hidden="true"><span class="project__mono">MYT</span><span class="project__name">Mayuri&rsquo;s Yarn Tales</span></div>
+            <div class="concept__meta project__meta">
+              <div>
+                <span class="tag tag--live">Live client project</span>
+                <h4>Mayuri&rsquo;s Yarn Tales</h4>
+                <p>Designed &amp; built by Sitewise Studio.</p>
+              </div>
+              <a class="btn btn--outline btn--sm" href="https://mayurisyarntales.online/" target="_blank" rel="noopener">Visit live site<span class="visually-hidden">: Mayuri&rsquo;s Yarn Tales (opens in a new tab)</span><svg class="icon icon--arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </article>
+        </div>
+
+        <h3 class="work-sub reveal">Sample concepts</h3>
+        <p class="work-note reveal"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3a9 9 0 1 0 0 18c1.5 0 2-1 2-2s-1-1.5-1-2.5 1-1.5 2-1.5h2a4 4 0 0 0 4-4c0-4.4-4-8-9-8z"/><circle cx="7.5" cy="11" r="1.2"/><circle cx="10" cy="7" r="1.2"/><circle cx="15" cy="7.5" r="1.2"/></svg>Designed to show our style, not client projects. Hover or tap a preview to scroll through the page.</p>
         <div class="grid-3">
           <article class="card concept reveal" tabindex="0" aria-labelledby="c1">
             <div class="card__bar concept__bar"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="concept__url">hillviewhomestay.in</span></div>
@@ -261,7 +294,7 @@
             </div>
             <div class="concept__meta">
               <span class="tag">Sample concept</span>
-              <h3 id="c1">Mountain homestay</h3>
+              <h4 id="c1">Mountain homestay</h4>
               <p>Rooms, gallery, location map and a WhatsApp booking button.</p>
             </div>
           </article>
@@ -287,7 +320,7 @@
             </div>
             <div class="concept__meta">
               <span class="tag">Sample concept</span>
-              <h3 id="c2">Neighbourhood cafe</h3>
+              <h4 id="c2">Neighbourhood cafe</h4>
               <p>Menu, opening hours, photos and directions on one page.</p>
             </div>
           </article>
@@ -310,7 +343,7 @@
             </div>
             <div class="concept__meta">
               <span class="tag">Sample concept</span>
-              <h3 id="c3">Student portfolio</h3>
+              <h4 id="c3">Student portfolio</h4>
               <p>Projects, skills and a resume download for placements and internships.</p>
             </div>
           </article>
